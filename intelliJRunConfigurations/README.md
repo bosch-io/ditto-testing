@@ -15,8 +15,8 @@ This is how to create this run configuration manually:
 * Click the "+" to add a new run configuration
 * Select "docker-compose"
 * Now select the following two compose files:
-  * $testRepoRoot/docker/docker-compose.yml
   * $testRepoRoot/docker/docker-compose.override.yml
+  * $testRepoRoot/docker/docker-compose.yml
 * In the "services" section you can define which services of the compose file you want to start. This is what I have: artemis, kafka, mqtt, oauth, rabbitmq, zookeeper, fluentbit, ssh, 
 
 That's it. When you run this configuration, all external dependencies (except a mongo DB) which are required for running systemtests locally are getting started.
